@@ -67,8 +67,8 @@ public class Lesson2_2 {
             afterRefreshTitle = lesson2_2.getOnlyTitle(driver, changingTitleName);
 
             if (etalonTitle.equals(afterRefreshTitle)) {
-                System.out.println(" The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is equivalent to itself after refresh.");
-            } else System.out.println(" The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is NOT equivalent to itself after refresh. Title after refresh is " + afterRefreshTitle + ".");
+                System.out.println("The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is equivalent to itself after refresh.");
+            } else System.out.println("The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is NOT equivalent to itself after refresh. Title after refresh is " + afterRefreshTitle + ".");
 
         }
 
@@ -76,7 +76,7 @@ public class Lesson2_2 {
     }
 
     public static WebDriver initChrome (){
-        System.setProperty("webdriver.chrome.driver","D:\\IdeaProjects\\lesson2\\lesson2\\drivers\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","c:\\_Driver\\browser_drivers\\chromedriver.exe");
         return new ChromeDriver();
     }
 
