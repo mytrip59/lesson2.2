@@ -15,11 +15,13 @@ public class Lesson2_2 {
     public static final String DASHBOARD = ".//*[@id='tab-AdminDashboard']/a";
     public static final String ORDERS = ".//*[@id='subtab-AdminParentOrders']/a";
     public static final String CATALOGUE = ".//*[@id='subtab-AdminCatalog']/a";
-    public static final String CLIENTS = "/html/body/nav/ul/li[5]/a";
+    //public static final String CLIENTS = "/html/body/nav/ul/li[5]/a";
+    public static final String CLIENTS = "//span[text()='Клиенты']";
     public static final String CLIENTSERVICE = ".//*[@id='subtab-AdminParentCustomerThreads']/a";
     public static final String STATISTIC = ".//*[@id='subtab-AdminStats']/a";
     public static final String MODULES = ".//*[@id='subtab-AdminParentModulesSf']/a";
-    public static final String DESIGN = "/html/body/nav/ul/li[10]/a";
+    public static final String DESIGN = "//span[text()='Design']";
+    //public static final String DESIGN = "/html/body/nav/ul/li[10]/a";
     //public static final String DESIGN = ".//*[@id='subtab-AdminParentThemes']/a";
     public static final String DELIVERY = ".//*[@id='subtab-AdminParentShipping']/a";
     public static final String PAYMENT = ".//*[@id='subtab-AdminParentPayment']/a";
@@ -70,6 +72,7 @@ public class Lesson2_2 {
                 System.out.println("The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is equivalent to itself after refresh.");
             } else System.out.println("The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is NOT equivalent to itself after refresh. Title after refresh is " + afterRefreshTitle + ".");
 
+            numberMenuItem++;
         }
 
         driver.quit();
