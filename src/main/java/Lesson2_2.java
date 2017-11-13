@@ -51,6 +51,7 @@ public class Lesson2_2 {
         lesson2_2.enterPassword (driver, "webinar.test@gmail.com", "Xcg7299bnSmMuRLp9ITw");
         lesson2_2.threadSleep(3000);
 
+        int numberMenuItem = 1;
         for (String menuName : menuLinksArray) {
             String changingTitleName;
 
@@ -66,8 +67,8 @@ public class Lesson2_2 {
             afterRefreshTitle = lesson2_2.getOnlyTitle(driver, changingTitleName);
 
             if (etalonTitle.equals(afterRefreshTitle)) {
-                System.out.println("Tilte " + etalonTitle + "is equivalent itself after refresh");
-            } else System.out.println("Tilte " + etalonTitle + " is NOT equivalent itself after refresh. Title after refresh is " + afterRefreshTitle);
+                System.out.println(" The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is equivalent to itself after refresh.");
+            } else System.out.println(" The tilte for menu item number " + numberMenuItem + " is " + etalonTitle + ". This title is NOT equivalent to itself after refresh. Title after refresh is " + afterRefreshTitle + ".");
 
         }
 
